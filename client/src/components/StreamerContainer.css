@@ -1,0 +1,67 @@
+.streamer-container {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 255,0.05);
+    border-radius: 20px;
+    margin: 10px;
+    height: 100%;
+}
+
+.streamer-profile-picture {
+    display: flex;
+    background-color: aqua;
+    border-radius: 30px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+
+}
+
+.streamer-display-name {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.streamer-name-game-container{
+    display: block;
+    margin: auto 100px auto auto;
+}
+
+.streamer-game-name {
+    color: white;
+    display: flex;
+    font-size: 13px;
+    margin: auto;
+}
+    
+.streamer-status {
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+.streamer-viewer_count {
+    color: white;
+    display: flex;
+    margin: auto 30px auto 10px;
+}
+
+.offline {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px ;
+}
+
+.online {
+    background-color: rgb(53, 192, 53);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px ;
+}
+
+.invite-play-button {
+    background-color: ;
+}

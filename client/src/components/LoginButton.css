@@ -1,0 +1,12 @@
+.login-button {
+    background-image: linear-gradient(to bottom, #4e13bd, #8501ff);
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 15px;
+    width: 120px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
