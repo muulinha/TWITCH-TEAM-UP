@@ -2,6 +2,8 @@ import Header from './components/Header';
 import About from './pages/About';
 import Home from './pages/Home';
 import Events from './pages/Events';
+import CreateEvent from './pages/CreateEvent';
+import EditEvent from './pages/EditEvent';
 import Index from './pages/Index';
 import Login from './pages/Login';
 import Signin from './pages/Signin';
@@ -26,7 +28,11 @@ function App() {
         <Route exact path="/Login" element={<Login/>}/>
         <Route exact path="/Signin" element={<Signin/>}/>
         <Route exact path="/Home" element={<Home/>}/>
+        
         <Route exact path="/Events" element={<Events/>}/>
+        <Route exact path="/CreateEvent" element={<CreateEvent/>}/>
+        <Route exact path="/EditEvent" element={<EditEvent/>}/>
+
         <Route exact path="/About" element={<About/>}/>
         <Route path="*" element={<Index/>}/> 
         </Routes>

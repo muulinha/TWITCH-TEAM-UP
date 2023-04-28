@@ -1,5 +1,4 @@
 import './Events.css';
-import Button from '../components/Button';
 import EventLine from '../components/EventLine';
 
 
@@ -26,13 +25,19 @@ function Events() {
           <EventLine />
         <div className='event-buttons'>
           <div className='margin-buttons'>
-            <Button className='margin-buttons'>CREATE <br></br>EVENT </Button>
+          <a href='./CreateEvent'>      
+      <button className='login-button'>CREATE<br></br>EVENT</button>
+      </a>
           </div>
           <div className='margin-buttons'>
-            <Button>EDIT <br></br>EVENT </Button>
+          <a href='./EditEvent'>      
+      <button className='login-button'>EDIT<br></br>EVENT</button>
+      </a>
           </div>
           <div className='margin-left'>
-            <Button>DELETE <br></br>EVENT </Button>
+                
+      <button className='login-button'>DELETE<br></br>EVENT</button>
+      
           </div>
         </div>
       </div>
