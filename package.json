@@ -4,14 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start2": "node index",
-    "dev": "nodemon index",
-    "seed": "node utils/seed",
-    "heroku-postbuild": "node utils/seed.js"
+    "start": "node server/server.js --ignore client",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
