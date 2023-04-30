@@ -5,14 +5,17 @@
 }
 
 .logo {
-    height: 70%;
-    margin: auto auto auto 30px;
+    width: 72px;
+    /* margin: auto auto auto 30px; */
+    object-fit: cover;
 }
 
 .header {
     display:flex;
     justify-content: center;
+    align-items: center;
     height: 100px;
+    padding: 0 20px;
     font-size: 40px;
     justify-content: space-between;
     background-color: rgb(255, 255, 255,0.05);
@@ -34,7 +37,7 @@ li {
 
 .logo-navbar {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -49,7 +52,7 @@ a {
 a:hover {
     color:rgb(132, 52, 236);
     /* background-color: rgb(255, 255, 255); */
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     text-decoration: underline;
     transition: text-decoration 0.5s ease;
     /* transition: background-color 0.5s ease; */
