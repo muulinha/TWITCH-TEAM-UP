@@ -1,10 +1,11 @@
+import EditEvent from '../components/EditEvent';
 import './About.css';
 // import Backboard from '../components/Backboard';
 
 function About() {
   return (
     <section className='center'>
-      <div className='background-container'>
+      {/* <div className='background-container'>
           <div className='backboard-img backboard-container'>
           <p className='main-title'> 
           ABOUT US
@@ -22,7 +23,8 @@ function About() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis exercitationem iste ratione porro officiis earum error quia quos explicabo sunt nemo aspernatur nam laborum, quidem eos soluta quae, voluptatibus eligendi!
         </p>
         </div>
-        </div>
+        </div> */}
+        <EditEvent />
     </section>
   );
 }
