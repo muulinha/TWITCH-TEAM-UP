@@ -38,8 +38,8 @@
 
 .event-subtitles {
     text-align: center;
-    display: flex;
-    width: 60%;
+    /* display: flex; */
+    /* width: 60%; */
     margin: auto;
     font-size: 20px;
     margin-top : 10px;
