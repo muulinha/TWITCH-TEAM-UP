@@ -1,6 +1,6 @@
-import './Events.css';
-import EventLine from '../components/EventLine';
-
+import "./Events.css";
+import Button from "../components/Button";
+import EventLine from "../components/EventLine";
 
 // CREATE EVENT BUTTON shall open a window requesting the
 // eventDate + eventTitle + eventDescription
@@ -15,34 +15,37 @@ import EventLine from '../components/EventLine';
 
 // Deleve Event when clicked shall have a message asking if the user is sure about the action
 
-
-
 function Events() {
-    return (
-      <div className='event-container'>
-      <div className='backboard-img backboard-container'>
-        <p className='main-title'>UPCOMING EVENTS</p>
-          <EventLine />
-        <div className='event-buttons'>
-          <div className='margin-buttons'>
-          <a href='./CreateEvent'>      
-      <button className='login-button'>CREATE<br></br>EVENT</button>
-      </a>
+  return (
+    <div className="m-auto">
+      <div className="backboard-img m-auto  ">
+        <p className="main-title">UPCOMING EVENTS</p>
+        <EventLine />
+        <div className="event-buttons">
+          <div className="d-flex"
+              style={{
+                justifyContent:'center',
+                gap:'30px'
+              }}
+          >
+            <Button className=""
+        
+            >
+              CREATE <br></br>EVENT{" "}
+            </Button>
+            <Button>
+              EDIT <br></br>EVENT{" "}
+            </Button>
+            <Button>
+              DELETE <br></br>EVENT{" "}
+            </Button>
           </div>
-          <div className='margin-buttons'>
-          <a href='./EditEvent'>      
-      <button className='login-button'>EDIT<br></br>EVENT</button>
-      </a>
-          </div>
-          <div className='margin-left'>
-                
-      <button className='login-button'>DELETE<br></br>EVENT</button>
-      
-          </div>
+       
+          
         </div>
       </div>
-      </div>
-      );
-    }
+    </div>
+  );
+}
 
 export default Events;
