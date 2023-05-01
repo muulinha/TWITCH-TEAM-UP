@@ -3,6 +3,10 @@
     margin: auto;
     
 }
+.m-auto{
+    margin: auto;
+
+}
 
 .backboard-container {
     padding: 30px;
@@ -19,9 +23,9 @@
 
 
 .event-buttons {
-    display: flex;
-    float: right;   
-    margin: 10px 0 30px;
+    /* display: flex; */
+    /* float: right;    */
+    /* margin: 10px 0 30px; */
 }
 
 .margin-buttons {

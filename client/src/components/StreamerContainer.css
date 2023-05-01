@@ -26,7 +26,8 @@
 
 .streamer-name-game-container{
     display: block;
-    margin: auto 100px auto auto;
+    padding: 0 20px;
+    /* margin: auto 100px auto auto; */
 }
 
 .streamer-game-name {
@@ -63,5 +64,35 @@
 }
 
 .invite-play-button {
-    background-color: ;
+    /* background-color: ; */
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex-basis: 30%;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col {
+      flex-basis: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .col {
+      flex-basis: 100%;
+    }
+  }
+  

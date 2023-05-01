@@ -4,7 +4,9 @@
     box-sizing: border-box;
     color: white;
 }
-
+a{
+    display: inline;
+}
 .main-container {
     display: inline-block;
     width: 100%;
@@ -25,22 +27,27 @@
 .login-button-container {
     display: flex;
 }
+.d-flex{
+    display: flex;
+    align-items: center;
 
+}
 .buttons-container {
     display: flex;
     justify-content: center;
-}
-
+    align-items: center;
+   }
 
 .login-button {
     background-image: linear-gradient(to bottom, #4e13bd, #8501ff);
     height: 35px;
     border-radius: 15px;
-    width: 120px;
+    /* width: 120px; */
+    padding: 0 60px;
     font-size: 16px;
     color: white;
     font-weight: bold;
     cursor: pointer;
     border: none;
-    margin: 20px;
+    /* margin: 20px; */
 }
