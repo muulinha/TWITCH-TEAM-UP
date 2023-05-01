@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 // Schema to create user model
 const userSchema = new Schema(
@@ -13,14 +13,19 @@ const userSchema = new Schema(
     //   required: true,
     // },
     userLogin: {
-        type: String,
-        required: true,
-        unique: true
-      },
+      type: String,
+      required: true,
+      unique: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      // unique: true,
+    },
     password: {
-        type: String,
-        required: true,
-      },
+      type: String,
+      required: true,
+    },
 
     // profileImageURL: {
     //     type: string,
@@ -41,16 +46,14 @@ const userSchema = new Schema(
     //   type: String,
     //   require: false,
     // }
-
-
   },
   {
-    toJSON: {
-      getters: true,
-    },
+    // toJSON: {
+    //   getters: true,
+    // },
   }
 );
 
-const User = model('user', userSchema);
+const User = model("user", userSchema);
 
 module.exports = User;
