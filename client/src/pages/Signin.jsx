@@ -97,7 +97,7 @@ const Signin = () => {
           onChange={handleConfirmPasswordChange}
         ></input>
         <br />
-        <div className="text-right">
+        <div className="text-center">
           <button type="submit" className="login-button">
             REGISTER
           </button>
