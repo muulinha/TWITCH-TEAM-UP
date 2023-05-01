@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+.background-container {
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
+.backboard-img {
+  background-image: url('../images/backboard.png');
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.about-title {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 40px 40px;
+
+}
+
+.about-text { 
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: auto 40px;
+
+}
+
+.center {
+  margin: 50px auto;
+}
+
