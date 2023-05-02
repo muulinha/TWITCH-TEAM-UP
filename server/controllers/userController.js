@@ -73,44 +73,40 @@ module.exports = {
   async signupUser(req, res) {
     try {
       // See if the user exists
-
-      let user = await User.findOne({ userLogin: req.body.userLogin });
-      if (user) {
+      let userCheck = await User.findOne({ userLogin: req.body.userLogin });
+      if (userCheck) {
+        //this will throw an error if the user is trying to create an account that already exists
         return res
           .status(400)
           .json({ success: false, message: "user already exists" });
-      }
-
-      // Create a new user object with the data from req.body
-      user = new User({
-        userLogin: req.body.userLogin,
-        password: req.body.password,
-        email: req.body.email,
-      });
-
-      // Encrypt the password
-      const salt = await bcrypt.genSalt(12);
-      console.log(salt, "salt");
-      user.password = await bcrypt.hash(req.body.password, salt);
-      await user.save();
-
-      //  Return jsonwebtoken
-      const payload = {
-        user: {
-          id: user.id,
-        },
-      };
-      jwt.sign(
-        payload,
-        process.env.JWT_SECRET,
-        { expiresIn: 360000 },
-        (err, token) => {
-          if (err) {
-            throw err;
+      } else {
+        // Create a new user object with the data from req.body
+        const user = await User.create({
+          ...req.body,
+        });
+        // Encrypt the password
+        const salt = await bcrypt.genSalt(12);
+        console.log(salt, "salt");
+        user.password = await bcrypt.hash(req.body.password, salt);
+        await user.save();
+        //  Return jsonwebtoken
+        const payload = {
+          user: {
+            id: user.id,
+          },
+        };
+        jwt.sign(
+          payload,
+          process.env.JWT_SECRET,
+          { expiresIn: 360000 },
+          (err, token) => {
+            if (err) {
+              throw err;
+            }
+            res.json({ token });
           }
-          res.json({ token });
-        }
-      );
+        );
+      }
     } catch (err) {
       console.error(err, "THis is not working");
       res.status(500).json({ success: false, message: err });

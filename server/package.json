@@ -1,5 +1,6 @@
 {
   "name": "team-up-backend",
+  "proxy": "http://localhost:4040/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
