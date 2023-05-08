@@ -9,7 +9,7 @@ const {
   loginUser,
   getUserProfile,
 } = require("../../controllers/userController");
-const authMiddleware = require("../../middleware/authMiddleware");
+// const authMiddleware = require("../../middleware/authMiddleware");
 
 // /api/Users
 router.route("/").get(getUsers).post(createUser);
@@ -20,7 +20,9 @@ router.route("/register").post(signupUser);
 // login User
 router.route("/login").post(loginUser);
 // get My Porfile
-router.get("/getProfile", authMiddleware, getUserProfile);
+router.get("/getProfile", getUserProfile);
+// authMiddleware, 
+
 
 // /api/Users/:UserId
 router.route("/:userId").get(getSingleUser).delete(deleteUser).put(updateUser);
