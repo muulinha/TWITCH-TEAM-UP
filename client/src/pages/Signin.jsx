@@ -65,7 +65,7 @@ const Signin = () => {
   return (
     <div className="backboard-img backboard-login">
       <h1 className="login-title">SIGNIN</h1>
-      <form onSubmit={handleSubmit} className="input-container">
+      <form method = "post" onSubmit={handleSubmit} className="input-container">
         <p className="login-subtitles"> Twitch User:</p>
         <input
           className="login-input"
