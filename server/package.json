@@ -9,7 +9,7 @@
     "npm" : "8.x.x"
   },
   "scripts": {
-    "start": "node index",
+    "start": "node index.js",
     "dev": "nodemon index",
     "seed": "node utils/seed",
     "heroku-postbuild": "node utils/seed.js"
