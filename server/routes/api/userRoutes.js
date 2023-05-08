@@ -18,7 +18,7 @@ router.route("/").get(getUsers).post(createUser);
 router.route("/register").post(signupUser);
 
 // login User
-router.route("/login").post(loginUser);
+router.route("/Login").post(loginUser);
 // get My Porfile
 router.get("/getProfile", getUserProfile);
 // authMiddleware, 

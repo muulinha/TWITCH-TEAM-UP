@@ -43,7 +43,7 @@ function Index() {
       </p>
       <div className="buttons-container">
         <div className="d-flex">
-          <a href="./login">
+          <a href="./Login">
             <button className="login-button">LOGIN</button>
           </a>
 

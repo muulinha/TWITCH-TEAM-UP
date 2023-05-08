@@ -35,7 +35,7 @@ const Login = () => {
     };
 
     axios
-      .post("http://localhost:4040/api/user/login", payload)
+      .post("http://localhost:4040/api/user/Login", payload)
       .then((response) => {
         localStorage.setItem("token", response.data.token);
         // Make another API request to get the user profile
