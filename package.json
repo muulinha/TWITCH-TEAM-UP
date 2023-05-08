@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines" : { 
-    "npm" : "8.x",
-    "node" : "17.x"
+    "node" : "17.x.x"
   },
   "scripts": {
     "start": "node server/server.js --ignore client",

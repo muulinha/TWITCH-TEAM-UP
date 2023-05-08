@@ -2,8 +2,7 @@
   "name": "curso-react",
   "version": "0.1.0",
   "engines" : { 
-    "npm" : "8.x",
-    "node" : "17.x"
+    "node" : "17.x.x"
   },
   "private": true,
   "dependencies": {
