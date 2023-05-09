@@ -1,74 +1,68 @@
-# Teamup 
+# Team Up 
+
+The TEAM UP is a web application that connects twitch streamers.
+It allows streamers to view other streamers events to engage and participate in them.
+It shows online streamers registered to the platform
+
+# User Story 
+
+AS A user; 
+- I WANT to be able to see the online twitch streamers registered to the platform.
+SO THAT I can visit their twitch live stream and engage with the audience.
+
+- I WANT to be able to see the twitch streamers’ upcoming events and post my own events.
+SO THAT I can join their events and have my events attended by others.
+
+# Acceptance Criteria 
+
+Given I need to see Other Streamers, When I visit TeamUp website, Then I can Sign up and see the available Streamers that i can invite to play with.
+
+Given I want to create a event, When I click on "create Event" on the Event page, Then I am taken to a page to input my event details and create a event.
+
+Given I want to Edit a event, When I click on "Edit Event" in the navigation Event page, Then I am taken to a Existing Event where I can edit or add details .
+
+Given I want to Delete Event in the website, When I click on "Delete Event" in the navigation Event page, Then I am taken to a event where I can delete it.
+
+Given I want to sign in to the website, When I click on "Sign In" in the main page, Then I am taken to a form where I can enter my username and password and access my account.
+
+## Features 
+
+* Events page to work;
+* Invite to play button;
+* Connect to Twitch API (working, but not connected)
+
+## Stack 
+
+* HTML, CSS, JavaScript
+* Heroku
+* Mongodb
+* Node.js
+* React
+* Express
+* Dotenv
+* Axios
+* Mongoose
+
+## Futures Developments 
+
+* Events page to work (front end done, but not connect);
+* Invite to play button;
+* Connect to Twitch API (fetching data working, but not connected);
+* Multi-twitch function
+
+## Deployment 
+
+https://damp-escarpment-14463.herokuapp.com/
+
+# Repository 
+
+https://github.com/muulinha/TWITCH-TEAM-UP
 
 
-# Getting Started with Create React App
+## ScreenShots
+![Alt text](./client/images/main%20page%20.png "Main Page")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](./client/images/Streamers%20page%20.png "Streamers Page")
 
-## Available Scripts
+![Alt text](./client/images/events%20page%20.png "Events Page")
 
-In the project directory, you can run:
-
-### `npm start`
-dasda
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`sdadsa
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-das
