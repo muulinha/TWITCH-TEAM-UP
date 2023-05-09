@@ -48,7 +48,7 @@ function Index() {
           </a>
 
           <a href="./signin">
-            <button className="login-button">SIGNIN</button>
+            <button className="login-button">SIGNUP</button>
           </a>
         </div>
       </div>
