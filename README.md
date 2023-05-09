@@ -15,15 +15,15 @@ SO THAT I can join their events and have my events attended by others.
 
 # Acceptance Criteria 
 
-Given I need to see Other Streamers, When I visit TeamUp website, Then I can Sign up and see the available Streamers that i can invite to play with.
+Given I need to see Other STREAMERS, When I visit TeamUp website, Then I can Sign up and see the available Streamers that i can invite to play with.
 
-Given I want to create a event, When I click on "create Event" on the Event page, Then I am taken to a page to input my event details and create a event.
+Given I want to CREATE EVENT, When I click on "create Event" on the Event page, Then I am taken to a page to input my event details and create a event.
 
-Given I want to Edit a event, When I click on "Edit Event" in the navigation Event page, Then I am taken to a Existing Event where I can edit or add details .
+Given I want to EDIT EVENT, When I click on "Edit Event" in the navigation Event page, Then I am taken to a Existing Event where I can edit or add details .
 
-Given I want to Delete Event in the website, When I click on "Delete Event" in the navigation Event page, Then I am taken to a event where I can delete it.
+Given I want to DELETE EVENT in the website, When I click on "Delete Event" in the navigation Event page, Then I am taken to a event where I can delete it.
 
-Given I want to sign in to the website, When I click on "Sign In" in the main page, Then I am taken to a form where I can enter my username and password and access my account.
+Given I want to LOGIN to the website, When I click on "Login" in the main page, Then I am taken to a form where I can enter my username and password and access my account.
 
 ## Features 
 
