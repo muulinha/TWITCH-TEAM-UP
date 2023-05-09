@@ -17,8 +17,9 @@ const Login = () => {
     setPasswordError("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
+    debugger
     if (!username) {
       setUsernameError("Please enter a username");
     }
@@ -34,9 +35,11 @@ const Login = () => {
       password: password,
     };
 
-    axios
+    await axios
       .post("http://localhost:4040/api/user/Login", payload)
       .then((response) => {
+        debugger
+        console.log(response,"response")
         localStorage.setItem("token", response.data.token);
         // Make another API request to get the user profile
         axios
