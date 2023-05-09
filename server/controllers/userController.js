@@ -5,6 +5,7 @@
 const { User, Event } = require("../models");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+require('dotenv').config();
 
 module.exports = {
   // Get all users
@@ -86,7 +87,7 @@ module.exports = {
         });
         // Encrypt the password
         const salt = await bcrypt.genSalt(12);
-        console.log(salt, "salt");
+        console.log(process.env, "salt");
         user.password = await bcrypt.hash(req.body.password, salt);
         await user.save();
         //  Return jsonwebtoken
@@ -132,7 +133,7 @@ module.exports = {
           .status(400)
           .json({ success: false, message: "Invalid credentials" });
       }
-
+console.log(user)
       // Return jsonwebtoken
       const payload = {
         user: {
@@ -157,6 +158,7 @@ module.exports = {
   },
   async getUserProfile(req, res) {
     try {
+      console.log(req)
       const user = await User.findById(req.user.id).select("-password");
       res.json(user);
     } catch (err) {
