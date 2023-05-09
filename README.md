@@ -17,7 +17,7 @@ SO THAT I can join their events and have my events attended by others.
 
 Given I need to see Other STREAMERS, When I visit TeamUp website, Then I can Sign up and see the available Streamers that i can invite to play with.
 
-Given I want to CREATE EVENT, When I click on "create Event" on the Event page, Then I am taken to a page to input my event details and create a event.
+Given I want to CREATE EVENT, When I click on "Create Event" on the Event page, Then I am taken to a page to input my event details and create a event.
 
 Given I want to EDIT EVENT, When I click on "Edit Event" in the navigation Event page, Then I am taken to a Existing Event where I can edit or add details .
 
