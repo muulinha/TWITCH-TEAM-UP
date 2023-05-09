@@ -25,6 +25,7 @@ const Signin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
 
     if (!username || !password) {
       alert("Please enter username and password");
@@ -64,7 +65,7 @@ const Signin = () => {
 
   return (
     <div className="backboard-img backboard-login">
-      <h1 className="login-title">SIGNIN</h1>
+      <h1 className="login-title">SIGNUP</h1>
       <form method="POST" onSubmit={handleSubmit} className="input-container">
         <p className="login-subtitles"> Twitch User:</p>
         <input
