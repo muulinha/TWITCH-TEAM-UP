@@ -36,7 +36,7 @@ const Header = ({ handleLogout }) => {
         </p>
         <p style={{ fontSize: "16px" }}>
           <strong style={{ color: "orange" }}>
-            {JSON.parse(localStorage.getItem("profile")).userLogin}
+            {JSON.parse(localStorage.getItem("profile"))?.userLogin}
           </strong>
         </p>
       </div>
